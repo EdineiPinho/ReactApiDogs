@@ -22,9 +22,9 @@
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
+    "react/prop-types": "on",
     "no-unsafe-finally": "off",
-    "no-unused-vars": "off",
-    "react-refresh/only-export-components": "off"
+    "no-unused-vars": "on",
+    "react-refresh/only-export-components": "on"
   }
 }
