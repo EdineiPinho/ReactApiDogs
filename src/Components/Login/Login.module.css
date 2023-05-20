@@ -16,7 +16,6 @@
 .forms {
   max-width: 30rem;
   padding: 1rem;
-  position: sticky;
 }
 
 @media (max-width: 40rem) {
