@@ -1,0 +1,6 @@
+.photo {
+  display: grid;
+  grid-template-columns: 1.5fr .8fr;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
