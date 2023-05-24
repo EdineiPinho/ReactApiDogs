@@ -33,7 +33,7 @@ const LoginPasswordReset = () => {
   }
 
   return (
-    <div>
+    <section>
       <Head title="Nova Senha" />
       <h1 className="title">Resete a Senhar</h1>
       <form onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ const LoginPasswordReset = () => {
         {<Error error={error} />}
 
       </form>
-    </div>);
+    </section>);
 };
 
 export default LoginPasswordReset;
