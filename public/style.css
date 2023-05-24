@@ -1,0 +1,23 @@
+.noscript {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pageNoScriptP {
+  margin-top: 20vh;
+  display: block;
+  text-align: center;
+}
+
+.pageNoScriptA {
+  display: block;
+  color: #fb1;
+  cursor: pointer;
+  text-shadow: 5px 5px 3px rgba(255, 227, 141, .6);
+}
+
+
+.pageNoScriptA:hover {
+  color: #333;
+  text-shadow: 5px 5px 3px #fb1;
+}
