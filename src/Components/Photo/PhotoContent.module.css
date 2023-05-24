@@ -1,15 +1,15 @@
 .photo {
   margin: auto;
   height: 36rem;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   background: white;
   display: grid;
   grid-template-columns: 36rem 20rem;
   grid-template-rows: auto 1fr auto;
   overflow: hidden;
-  /* opacity: 0; */
+  opacity: 0;
   transform: scale(0.8);
-  animation: scaleUp .3s forwards;
+  animation: scaleUp 0.3s forwards;
 }
 
 @keyframes scaleUp {
@@ -38,27 +38,9 @@
     overflow-y: auto;
     grid-template-columns: minmax(20rem, 40rem);
   }
-
-  p a,
-  p span {
-    text-shadow: 2px 2px 1px rgba(255, 255, 255, .9);
-    background: rgba(255, 255, 255, .8);
-    padding: 4px;
-    border-radius: 4px;
-  }
-
-  h1 a {
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, .9);
-  }
-
-  ul li {
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, .9);
-  }
-
-  img {
+  .img {
     grid-row: 1;
   }
-
 }
 
 .author {
@@ -78,8 +60,8 @@
   display: inline-block;
   width: 16px;
   height: 10px;
-  margin-right: 0.25rem;
-  background: url('../../Assets/visualizacao-black.svg') no-repeat;
+  margin-right: 0.5rem;
+  background: url('../../Assets/visualizacao-black.svg');
 }
 
 .attributes {

@@ -6,8 +6,8 @@
   justify-items: center;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 40rem) {
   .feed {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

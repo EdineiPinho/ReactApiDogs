@@ -1,15 +1,15 @@
-import React from 'react'
-import styles from './PhotoContent.module.css'
-import { Link } from 'react-router-dom'
-import PhotoComments from './PhotoComments'
-import { UserContext } from '../../UserContext'
-import PhotoDelete from './PhotoDelete'
-import Image from '../Helper/Image'
+import React from 'react';
+import styles from './PhotoContent.module.css';
+import { Link } from 'react-router-dom';
+import PhotoComments from './PhotoComments';
+import { UserContext } from '../../UserContext';
+import PhotoDelete from './PhotoDelete';
+import Image from '../Helper/Image';
 
 const PhotoContent = ({ data }) => {
   const user = React.useContext(UserContext);
-  const { photo, comments } = data
-  console.log(data)
+  const { photo, comments } = data;
+
   return (
     <div className={styles.photo}>
       <div className={styles.img}>
@@ -25,20 +25,18 @@ const PhotoContent = ({ data }) => {
             )}
             <span className={styles.visualizacoes}>{photo.acessos}</span>
           </p>
-          <h1 className='title'>
-            <Link to={`/foto/${photo.id}`}>
-              {photo.title}
-            </Link>
+          <h1 className="title">
+            <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
           </h1>
           <ul className={styles.attributes}>
             <li>{photo.peso} kg</li>
             <li>{photo.idade} anos</li>
           </ul>
         </div>
-        <PhotoComments id={photo.id} comments={comments} />
       </div>
+      <PhotoComments id={photo.id} comments={comments} />
     </div>
-  )
-}
+  );
+};
 
-export default PhotoContent
+export default PhotoContent;

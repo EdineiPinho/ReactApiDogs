@@ -56,11 +56,10 @@ export function PHOTO_POST(formData, token) {
     options: {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + token,
       },
-      Authorization: 'Bearer ' + token,
+      body: formData,
     },
-    body: formData,
   };
 }
 
@@ -95,7 +94,7 @@ export function COMMENT_POST(id, body) {
       },
       body: JSON.stringify(body),
     },
-  }
+  };
 }
 
 export function PHOTO_DELETE(id) {
